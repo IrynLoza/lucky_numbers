@@ -22,8 +22,13 @@ import random
 
 def lucky_numbers(n):
     """Return n unique random numbers from 1-10 (inclusive)."""
+    if n == 0:
+        return []
 
-   
+    result = []
+    for num in range(1, n+1):
+        result.append(num)
+    return result
 
 
 if __name__ == '__main__':
